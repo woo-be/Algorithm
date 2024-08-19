@@ -19,7 +19,7 @@ public class Main {
       boolean b = false;
       for (int j = 0; j < length; j++) {
         if (input < arr[j]) {
-          
+
           for (int k = 0; k < length - j; k++) {
             arr[length - k] = arr[length - k - 1];
           }
@@ -37,7 +37,8 @@ public class Main {
     }
 
     for(int i : arr) {
-      System.out.println(i);
+      bw.write(String.valueOf(i));
+      bw.write("\n");
     }
 
     bw.flush();
